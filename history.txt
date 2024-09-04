@@ -1,0 +1,83 @@
+    1  gpg --full-generate-key
+    2  y
+    3  gpg --full-generate-key
+    4  gpg --output my_revocation_certificate.asc --gen-revoke <key> 
+    5  gpg --output my_revocation_certificate.asc --gen-revoke uca
+    6  gpg --list-keys
+    7  gpg --output doc.gpg --export uca
+    8  gpg --armor --output doc.asc --export uca
+    9  gpg --export-secret-keys --armor <key> > ./my-priv-gpg-key.asc
+   10  gpg --export-secret-keys --armor uca > ./my-priv-gpg-key.asc
+   11  git clone https://github.com/Pyload901/llaves.git
+   12  ls
+   13  gpg --import ~/Downloads/davidKey
+   14  pwd
+   15  ls
+   16  cd llaves/
+   17  ls
+   18  cd
+   19  gpg --import ~/llaves/davidKey
+   20  gpg --list-keys
+   21  gpg --edit-key 00060021@uca.edu.sv
+   22  gpg --list-keys
+   23  history > historyPublicKey.txt
+   24  cat historyPublicKey.txt
+   25  gpg --output historyPublicKey.txt.gpg --encrypt --recipient
+   26  00049222@uca.edu.sv  historyPublicKey.txt
+   27  $gpg--outputdoc.gpg--encrypt--00049222@uca.edu.sv
+   28  $gpg--outputdoc.gpg--encrypt--00049222@uca.edu.sv.comdoc
+   29  $gpg--outputdoc.gpg--encrypt--00049222@uca.edu.sv 
+   30  $gpg--outputdoc.gpg--encrypt--$gpg--outputdoc.gpg--encrypt--00060021@uca.edu.sv 
+   31  gpg --output doc --symmetric doc.gpg
+   32  history > history.txt
+   33  cat history.txt
+   34  gpg --output history.txt.gpg --symmetric history.txt
+   35  cat history.txt.gpg
+   36  $gpg--outputdoc.gpg--encrypt--0006021@uca.edu.sv
+   37  --output doc.gpg --encrypt --0006021@uca.edu.sv doc 
+   38  gpg --output doc.gpg --encrypt --recipient 0006021@uca.edu.sv doc 
+   39  gpg --output doc.gpg --encrypt --recipient 00060021@uca.edu.sv doc 
+   40  history > historyPublicKey.txt
+   41  cat historyPublicKey.txt
+   42  gpg --output historyPublicKey.txt.gpg --encrypt --recipient
+   43  00060021@uca.edu.sv historyPublicKey.txt
+   44  gpg --output historyPublicKey.txt.gpg --encrypt --recipient
+   45  00060021@uca.edu.sv historyPublicKey.txt
+   46  gpg --output historyPublicKey.txt.gpg --encrypt --recipient 00060021@uca.edu.sv historyPublicKey.txt
+   47  cat historyPublicKey.txt
+   48  gpg --output doc --decrypt doc.gpg
+   49  ls
+   50  cd llaves
+   51  gpg --output doc --decrypt doc.gpg
+   52  ls
+   53  cd ..
+   54  ls
+   55  gpg --output doc --decrypt doc.gpg
+   56  gpg --output doc.gpg --encrypt --recipient 00049222@uca.edu.sv doc 
+   57  gpg --output doc --decrypt doc.gpg
+   58  gpg --output doc.sig --sign doc
+   59  gpg --output doc --decrypt doc.sig
+   60  gpg --output doc.sig --detach-sig doc
+   61  gpg --verify doc.sig doc
+   62  gpg --armor --output doc.asc --export uca
+   63  git clone https://github.com/AllanLopez28/Lab1-seguridad.git
+   64  ld
+   65  ls
+   66  cd Lab1-seguridad
+   67  gpg --armor --output doc.asc --export uca
+   68  gpg --export-secret-keys --armor uca> > ./my-priv-gpg-key.asc
+   69  gpg --export-secret-keys --armor uca > ./my-priv-gpg-key.asc
+   70  gpg --list-keys
+   71  ls
+   72  cd ..
+   73  ls
+   74  cd Lab1-seguridad/
+   75  ls
+   76  cp doc.asc
+   77  cp doc.asc copiadoc
+   78  ls
+   79  rm copiadoc 
+   80  cp doc.asc copiadoc.asc
+   81  ls
+   82  gpg --output doc.gpg --encrypt --recipient 00060021@uca.edu.sv doc 
+   83  history > history.txt
